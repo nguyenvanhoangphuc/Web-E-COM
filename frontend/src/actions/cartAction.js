@@ -7,7 +7,7 @@ import {
     CART_SAVE_PAYMENT
 } from "../constants/cartConstants";
 
-const BACKEND_URL = process.env.BACKEND_URL || "https://web-e-com-lora.onrender.com";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://web-e-com-lora.onrender.com";
 
 const addToCart = (productId, qty) => async (dispatch, getState) => {
     try {

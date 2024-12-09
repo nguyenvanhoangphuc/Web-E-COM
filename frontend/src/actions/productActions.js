@@ -14,7 +14,7 @@ import {
 } from "../constants/productConstants";
 import axios from "axios";
 
-const BACKEND_URL = process.env.BACKEND_URL || "https://web-e-com-lora.onrender.com";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://web-e-com-lora.onrender.com";
 
 const listProducts = () => async dispatch => {
     try {

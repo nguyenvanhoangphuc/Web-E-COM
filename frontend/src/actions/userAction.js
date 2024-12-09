@@ -9,7 +9,7 @@ import {
     USER_REGISTER_REQUEST
 } from "../constants/userConstants";
 
-const BACKEND_URL = process.env.BACKEND_URL || "https://web-e-com-lora.onrender.com";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://web-e-com-lora.onrender.com";
 
 const signin = (email, password) => async dispatch => {
     dispatch({ type: USER_SIGNIN_REQUEST, payload: { email, password } });
