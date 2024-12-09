@@ -15,7 +15,7 @@ import ShippingScreen from "./screens/ShippingScreen";
 import PaymentScreen from "./screens/PaymentScreen";
 import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 
-import logo from "./Images/logo.png";
+import logo from "./Images/LoraLogo.jpg";
 
 function App() {
     const userSignin = useSelector(state => state.userSignin);
@@ -32,9 +32,9 @@ function App() {
                 <header className="header">
                     <div className="brand">
                         <button onClick={openmenu}>&#9776;</button>
-                        <Link to="/">
-                            Origami
-                            <img src={logo} className="logo" />
+                        <Link to="/" className="App-logo-wrapper">
+                            Lora
+                            <img src={logo} className="App-logo" />
                         </Link>
                     </div>
                     <div className="header-links">

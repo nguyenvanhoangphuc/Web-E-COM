@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 
-import logo from "../Images/logo.png";
+import logo from "../Images/LoraLogo.jpg";
 
 function CarouselComponent() {
     return (
@@ -9,7 +9,7 @@ function CarouselComponent() {
             <Carousel.Item className="item">
                 <img
                     className="d-block w-100 carousel-img"
-                    src="https://images.unsplash.com/photo-1511370235399-1802cae1d32f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1474&q=80"
+                    src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/469014668_586297570576952_7165663208626051633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHvIaO6GGj8rccbHUEvBigPZ2bkDck0-otnZuQNyTT6izcnanmtrHfI65k3Y5bzAKfv6ETeNJLRwy4H99Nu9c8b&_nc_ohc=XzWeMwsrGKUQ7kNvgEXeDTd&_nc_zt=23&_nc_ht=scontent.fdad3-6.fna&_nc_gid=ANhwgsdizZt3VTvFNdEXP-f&oh=00_AYDiA7y6VQFH0QzfHcvOLL5Tt_nTSupUivldXZG_0cYtgg&oe=675D0BD4"
                     alt="First slide"
                 />
                 <Carousel.Caption className="caption">
@@ -22,7 +22,7 @@ function CarouselComponent() {
             <Carousel.Item className="item">
                 <img
                     className="d-block w-100 carousel-img"
-                    src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                    src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/469014668_586297570576952_7165663208626051633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHvIaO6GGj8rccbHUEvBigPZ2bkDck0-otnZuQNyTT6izcnanmtrHfI65k3Y5bzAKfv6ETeNJLRwy4H99Nu9c8b&_nc_ohc=XzWeMwsrGKUQ7kNvgEXeDTd&_nc_zt=23&_nc_ht=scontent.fdad3-6.fna&_nc_gid=ANhwgsdizZt3VTvFNdEXP-f&oh=00_AYDiA7y6VQFH0QzfHcvOLL5Tt_nTSupUivldXZG_0cYtgg&oe=675D0BD4"
                     alt="Second slide"
                 />
                 <Carousel.Caption className="caption">
@@ -35,7 +35,7 @@ function CarouselComponent() {
             <Carousel.Item className="item">
                 <img
                     className="d-block w-100 carousel-img"
-                    src="https://images.unsplash.com/photo-1495856458515-0637185db551?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                    src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/469014668_586297570576952_7165663208626051633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHvIaO6GGj8rccbHUEvBigPZ2bkDck0-otnZuQNyTT6izcnanmtrHfI65k3Y5bzAKfv6ETeNJLRwy4H99Nu9c8b&_nc_ohc=XzWeMwsrGKUQ7kNvgEXeDTd&_nc_zt=23&_nc_ht=scontent.fdad3-6.fna&_nc_gid=ANhwgsdizZt3VTvFNdEXP-f&oh=00_AYDiA7y6VQFH0QzfHcvOLL5Tt_nTSupUivldXZG_0cYtgg&oe=675D0BD4"
                     alt="Third slide"
                 />
                 <Carousel.Caption className="caption">
@@ -48,7 +48,7 @@ function CarouselComponent() {
             <Carousel.Item className="item">
                 <img
                     className="d-block w-100 carousel-img"
-                    src="https://images.unsplash.com/photo-1444881421460-d838c3b98f95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+                    src="https://scontent.fdad3-6.fna.fbcdn.net/v/t39.30808-6/469014668_586297570576952_7165663208626051633_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHvIaO6GGj8rccbHUEvBigPZ2bkDck0-otnZuQNyTT6izcnanmtrHfI65k3Y5bzAKfv6ETeNJLRwy4H99Nu9c8b&_nc_ohc=XzWeMwsrGKUQ7kNvgEXeDTd&_nc_zt=23&_nc_ht=scontent.fdad3-6.fna&_nc_gid=ANhwgsdizZt3VTvFNdEXP-f&oh=00_AYDiA7y6VQFH0QzfHcvOLL5Tt_nTSupUivldXZG_0cYtgg&oe=675D0BD4"
                     alt="Fourth slide"
                 />
                 <Carousel.Caption className="caption">

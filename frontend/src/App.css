@@ -1,11 +1,34 @@
+.brand {
+  display: flex;
+  align-items: center; /* Căn giữa logo và chữ Lora theo chiều dọc */
+  justify-content: space-between; /* Đảm bảo khoảng cách giữa menu và logo */
+  background-color: #fff; /* Màu nền của thanh header (nếu cần) */
+  border-bottom: 2px solid #f1f1f1; /* Đường viền phía dưới thanh header */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+/* .App-logo {
+  height: 40px;
   pointer-events: none;
+  margin: auto;
+  display: inline-block;
+} */
+
+.App-logo-wrapper {
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang nếu cần */
 }
+
+.App-logo {
+  height: 44px; /* Điều chỉnh chiều cao của logo */
+  width: auto; /* Giữ tỷ lệ khung hình gốc của logo */
+  margin-left: 10px; /* Khoảng cách giữa logo và tên "Lora" */
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,11 +51,11 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */

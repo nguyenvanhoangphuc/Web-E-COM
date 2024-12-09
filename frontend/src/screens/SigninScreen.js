@@ -61,13 +61,13 @@ function SigninScreen() {
                             Signin
                         </button>
                     </li>
-                    <li>New to Origami?</li>
+                    <li>New to Lora?</li>
                     <li>
                         <Link
                             to={redirect === "/" ? "/register" : "/register?redirect=" + redirect}
                             className="button secondary text-center"
                         >
-                            Create your Origami account.
+                            Create your Lora account.
                         </Link>
                     </li>
                 </ul>
