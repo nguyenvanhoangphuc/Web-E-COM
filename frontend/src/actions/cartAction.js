@@ -7,9 +7,11 @@ import {
     CART_SAVE_PAYMENT
 } from "../constants/cartConstants";
 
+const BACKEND_URL = process.env.BACKEND_URL || "https://web-e-com-lora.onrender.com";
+
 const addToCart = (productId, qty) => async (dispatch, getState) => {
     try {
-        const { data } = await Axios.get("/api/products/" + productId);
+        const { data } = await Axios.get(`${BACKEND_URL}/api/products/${productId}`);
         dispatch({
             type: CART_ADD_ITEM,
             payload: {

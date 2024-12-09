@@ -9,10 +9,12 @@ import {
     USER_REGISTER_REQUEST
 } from "../constants/userConstants";
 
+const BACKEND_URL = process.env.BACKEND_URL || "https://web-e-com-lora.onrender.com";
+
 const signin = (email, password) => async dispatch => {
     dispatch({ type: USER_SIGNIN_REQUEST, payload: { email, password } });
     try {
-        const { data } = await Axios.post("/api/users/signin", {
+        const { data } = await Axios.post(`${BACKEND_URL}/api/users/signin`, {
             email,
             password
         });
@@ -28,7 +30,7 @@ const register = (name, email, password) => async dispatch => {
         payload: { name, email, password }
     });
     try {
-        const { data } = await Axios.post("/api/users/register", {
+        const { data } = await Axios.post(`${BACKEND_URL}/api/users/register`, {
             name,
             email,
             password

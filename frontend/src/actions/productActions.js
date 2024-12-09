@@ -14,10 +14,12 @@ import {
 } from "../constants/productConstants";
 import axios from "axios";
 
+const BACKEND_URL = process.env.BACKEND_URL || "https://web-e-com-lora.onrender.com";
+
 const listProducts = () => async dispatch => {
     try {
         dispatch({ type: PRODUCT_LIST_REQUEST });
-        const { data } = await axios.get("/api/products");
+        const { data } = await axios.get(`${BACKEND_URL}/api/products`);
         dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
     } catch (error) {
         dispatch({ type: PRODUCT_LIST_FAIL, payload: error.message });
@@ -31,7 +33,7 @@ const saveProduct = product => async (dispatch, getState) => {
             userSignin: { userInfo }
         } = getState();
         if (!product._id) {
-            const { data } = await axios.post("/api/products", product, {
+            const { data } = await axios.post(`${BACKEND_URL}/api/products`, product, {
                 headers: {
                     Authorization: "Bearer" + userInfo.token
                 }
@@ -40,7 +42,7 @@ const saveProduct = product => async (dispatch, getState) => {
             dispatch({ type: PRODUCT_SAVE_SUCCESS, payload: data });
         } else {
             const { data } = await axios.put(
-                "/api/products/" + product._id,
+                `${BACKEND_URL}/api/products/` + product._id,
                 product,
                 {
                     headers: {
@@ -61,7 +63,7 @@ const deleteProduct = productId => async (dispatch, getState) => {
             userSignin: { userInfo }
         } = getState();
         dispatch({ type: PRODUCT_DELETE_REQUEST, payload: productId });
-        const { data } = await axios.delete("/api/products/" + productId, {
+        const { data } = await axios.delete(`${BACKEND_URL}/api/products/` + productId, {
             Authorization: "Bearer " + userInfo.token
         });
         dispatch({
@@ -76,7 +78,7 @@ const deleteProduct = productId => async (dispatch, getState) => {
 const detailsProduct = productId => async dispatch => {
     try {
         dispatch({ type: PRODUCT_DETAILS_REQUEST, payload: productId });
-        const { data } = await axios.get("/api/products/" + productId);
+        const { data } = await axios.get(`${BACKEND_URL}/api/products/` + productId);
         dispatch({ type: PRODUCT_DETAILS_SUCCESS, payload: data });
     } catch (error) {
         dispatch({ type: PRODUCT_DETAILS_FAIL, payload: error.message });
