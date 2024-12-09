@@ -6,6 +6,7 @@ import userRoute from "./routes/userRoute.js";
 import productRoute from "./routes/productRoute.js";
 import connectDB from "./db.js";
 import { importData } from "./seed.js";  // Import data chỉ khi cần
+import cors from 'cors';
 
 dotenv.config();
 
@@ -34,6 +35,7 @@ const startServer = async () => {
 
 // Middleware để phân tích JSON
 app.use(express.json()); // Express đã hỗ trợ phân tích JSON mà không cần body-parser
+app.use(cors());
 
 // Định nghĩa các route API
 app.use("/api/users", userRoute);
